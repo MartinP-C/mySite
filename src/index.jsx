@@ -19,8 +19,8 @@ render(
   <AppContainer>
     <Router>
         <Layout>
-          <Route exact path="/" component={IndexPage} />
-          <Route path="/skills" component={SkillsPage} />
+          <Route exact path="/mySite" component={IndexPage} />
+          <Route path="/mySite/skills" component={SkillsPage} />
         </Layout>
       </Router>
   </AppContainer>,
