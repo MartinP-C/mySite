@@ -1,0 +1,8 @@
+.js-accordian {
+    &.is-collapsed {
+        ul {
+            overflow: hidden;
+            height: 0;
+        }   
+    }
+}

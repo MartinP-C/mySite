@@ -1,0 +1,53 @@
+/*Add http://fontawesome.io*/
+
+h2 {
+    &.sticky {
+        position: sticky;
+        top: 50px;
+        z-index: 1;
+        background-color: white;
+    }
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.styled-list {
+    h2, h3, h4, h5, h6 {
+        display: inline-block;
+    }
+    li {
+        &::before {
+            height: 1em;
+            margin-right: 1em;
+            display: inline-block;
+        }
+    }
+    > li {
+        &::before {
+            content: '▼';
+        }
+        &.is-collapsed::before {
+            content: '>';
+        }
+
+        ul {
+            > li {
+                &::before {
+                    content: '/';
+                }
+
+                ul {
+                    > li {
+                        &::before {
+                            content: '#';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

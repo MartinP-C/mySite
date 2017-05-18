@@ -1,0 +1,158 @@
+﻿body{
+    background-color: #E1F3F6;
+}
+
+h1 {
+    background-color: #327882;
+    color: #FDD580;
+    margin-top: 0;
+    padding: 0.6em 0.2em;
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+}
+    
+h2.sticky {
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    background-color: white
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+ul.styled-list h2,
+ul.styled-list h3,
+ul.styled-list h4,
+ul.styled-list h5,
+ul.styled-list h6 {
+    display: inline-block
+}
+
+ul.styled-list li::before {
+    height: 1em;
+    margin-right: 1em;
+    display: inline-block
+}
+
+
+ul.styled-list>li::before {
+    content: '▼'
+}
+
+ul.styled-list>li.is-collapsed::before {
+    content: '>'
+}
+
+ul.styled-list>li ul>li::before {
+    content: '/'
+}
+
+ul.styled-list>li ul>li ul>li::before {
+    content: '#'
+}
+
+.page-footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: absolute;
+    bottom: 0;
+}
+
+.skills [class*="col"] {
+    text-align: center
+}
+
+nav {
+    background-color: white;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+}
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 0px;
+    min-height: 100px;
+    background-color: #50929B;
+    border-radius: 0px;
+}
+
+nav.navbar .icon-bar {
+    background-color: red
+}
+
+.nav-link {
+    color: #FDD580;
+    text-shadow: none;
+}
+
+.demo-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 2rem
+}
+
+.demo-container:hover .demo-rollover {
+    transform: translateY(0%)
+}
+
+.demo-container .demo-rollover {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 2em;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    background-color: rgba(225,243,246,0.6);
+    text-align: center
+}
+
+.article-container{
+    background-color: #ffffff;
+    padding: 2em 0.5em;
+    margin-bottom: 1em;
+}
+
+.article-container .article-footer span {
+    font-size: 0.8em
+}
+
+.article-container .article-footer span:first-child {
+    margin-right: 1em
+}
+
+.js-accordian.is-collapsed ul {
+    overflow: hidden;
+    height: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+h2 {
+    color: blue
+}
+
+.home section div {
+    background-color: #ffffff;
+    padding: 2em 1em;
+}
+
+img.me {
+    border-radius: 190px;
+}
+
+/*# sourceMappingURL=core.css.map */
